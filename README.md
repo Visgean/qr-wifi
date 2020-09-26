@@ -16,7 +16,6 @@ It is hacky because:
 This project is based on [@fumiyas/qrc](https://github.com/fumiyas/qrc).
 
 
-
 # Installation:
 
 ```
