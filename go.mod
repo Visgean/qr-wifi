@@ -1,4 +1,4 @@
-module wifi-qr
+module qr-wifi
 
 go 1.15
 
