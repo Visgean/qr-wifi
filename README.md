@@ -5,12 +5,12 @@ New versions of Android and iPhone can connect to wifi just by scanning QR code 
 To make it a bit easier I wanted to just type the wifi name and get the QR code, which is what this project does!  
 
 ## Warning
-This is **very hacky** way to create a QR code with wifi password on Ubuntu. 
 
-It is hacky because:
-- it just goes into `/etc/NetworkManager/system-connections` and reads the `.ini` files. This is almost certainly a bad way of doing this. 
+This is **very hacky**:  
+
+- it directly reads the `.ini` files in `/etc/NetworkManager/system-connections` and . This is almost certainly a bad way of getting wifi passwords.  
 - It needs sudo access.
-- I wrote it for fun to try doing a bit of go. 
+- It's my first Go utility and it was written mostly for fun and learning.  
 - I don't plan to maintain it whatsoever :) 
 
 ## Example 
