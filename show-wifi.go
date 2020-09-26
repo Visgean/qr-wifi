@@ -47,7 +47,7 @@ func print_qr(text string) {
 
 func match_with_args(filename string) bool {
 	argsWithoutProg := os.Args[1:]
-	if len(argsWithoutProg) < 0 {
+	if len(argsWithoutProg) <= 0 {
 		return true
 	}
 
