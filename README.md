@@ -13,30 +13,30 @@ It is hacky because:
 
 # Kudos:
 
-This project is  based on [@fumiyas/qrc](https://github.com/fumiyas/qrc).
+This project is based on [@fumiyas/qrc](https://github.com/fumiyas/qrc).
 
 
 
-# Building:
+# Installation:
 
 ```
-git clone https://github.com/Visgean/wifi-qr.git
-cd wifi-qr
-go build
+go get github.com/Visgean/qr-wifi
 ```
+
+(Plus you need to make sure that you have a `$GO_PATH/bin` in your `.bashrc` path.)
 
 # Usage
 
 Show QR codes for all networks:
 
 ```
-$ sudo ./wifi-qr 
+$ sudo qr-wifi 
 ```
 
 Filter networks by name:
 
 ```
-$ sudo ./wifi-qr Starbucks
+$ sudo qr-wifi Starbucks
 ```
 
 
@@ -45,8 +45,8 @@ $ sudo ./wifi-qr Starbucks
 I only use it on personal, encrypted computer to which no-one else has access to, so I don't care much for security on this level. Therefore I am happy to use this permission to avoid typing sudo: 
 
 ```
-sudo chown root:root wifi-qr
-sudo chmod 4775 wifi-qr
+sudo chown root:root `which qr-wifi`
+sudo chmod 4775 `which qr-wifi`
 ```
 
 Read more about it [here](https://unix.stackexchange.com/questions/18830/how-to-run-a-specific-program-as-root-without-a-password-prompt)
